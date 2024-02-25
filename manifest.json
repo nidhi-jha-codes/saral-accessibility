@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Saral",
+    "description": "Saral improves web accessibility by dynamically adjusting and translating specific text to cater to users with diverse literacy levels and language skills",
+    "version": "1.0",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["main.js"]
+        }
+      ],
+      "icons": {
+        "16": "icons/saral_16.png",
+        "48": "icons/saral_48.png",
+        "128": "icons/saral_128.png"
+      },
+      "web_accessible_resources": [{ 
+        "resources": ["icons/saral_16.png",
+        "icons/saral_48.png",
+        "icons/saral_128.png"],
+        "matches": ["<all_urls>"]
+}]
+  }
+
